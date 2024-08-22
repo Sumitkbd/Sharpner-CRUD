@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>TO-DO-LIST</title>
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="C:\My VS Code File\my work\TODO-main\todofav.png"
+		/>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="text-center">TODO</h1>
+			<div class="card">
+				<div class="input-group">
+					<input
+						type="text"
+						id="inputfield"
+						class="form-control"
+						placeholder="Text Here..."
+					/>
+					<div class="CRbutton">
+						<button id="addtodo" class="btn btn-success">Create</button>
+						<button
+							id="clearButton"
+							class="btn btn-danger"
+							onclick="removeAll()"
+						>
+							Remove All
+						</button>
+					</div>
+				</div>
+				<div id="cd01">
+					<div class="listitem" id="todocontainer"></div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
